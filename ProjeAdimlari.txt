@@ -1,0 +1,36 @@
+﻿1=> Öncelikle Project.ENTITIES,Project.MAP,Project.DAL,Project.BLL katmanlarını Class Library(.Net Framework) olarak acıyoruz(Solution'ımıza sag tıklayıp Add New Project diyerek)... UI katmanı hangi display'de istiyorsanız o platformda acılıyoruz...Bizim burada kullandıgımız Display MVC olarak secilmiştir...
+
+Sonra kesinlikle UI katmanını Set As Startup Project olarak ayarlamalısınız...
+
+N-Tier
+
+----Entities Katmanı----
+* Veritabanında tabloya dönüsecek olan sınıflarımızı ve enum'larımızı ve BaseEntity'imizi icerek olan katmandır...
+
+----DAL Katmanı----
+* Veritabanınız ile haberlesecek ve veritabanınızın olusmasını saglayacak katmandır...(Context sınıfı burada duracaktır)
+
+----Map Katmanı----
+* Veritabanı ayarlamalarınızı hazır bulundurup DAL'e gönderecek katmandır...
+
+
+----BLL Katmanı----
+*İş akışınızı belirleyecek olan katmandır...
+
+
+----UI Katmanı----
+*Kullanıcının etkileşime gececegi projeyi olusturan katmandır....
+
+
+--Sıra
+
+1 =) Önce ENTITES'ten baslıyoruz...Entities'de sınıflarımızı tamamladıktan sonra MAP katmanına gececegiz...
+
+2 => MAP katmanına geciyoruz...Map katmanında Veritabanı ayarlamaları yapacagımız icin Entity Framework'un bu katmana indirilmesi lazım...Bütün ayarlama işlemleri Entity Framework'ten gelir... Sonra ayarlama yapacak class'larımızı acmamız gerekir...Aynı zamanda Map katmanımıza Entities katmanındaki class'ları kullanmak istedigimizden dolayı Entities projesinden referans vermeyi unutmamalıyız...
+
+3=> DAL katmanına geciyoruz...Context class'ımızı tasarlıyoruz...Ayrıca burada bu katmana Entity Framework indirmeyi unutmuyoruz... Aynı zamanda DAL katmanı , MAP ve ENTITIES katmanlarından referans almalıdır...Onemli olan bir diger nokta da adresimizi belirlemek icin gecici bir süre UI katmanına gitmek gerektigidir...Cünkü artık bu katmandan sonra Veritbanı olusturma testi yapılmalıdır...Veritabanı olusturmak icin adresi belirleyebilmemiz lazım...
+
+
+			--UI katmanına gecip Entity Framework'u indirin....İndirdikten sonra UI katmanımızın web config'ine connectionString'inizi yazın...
+
+			Sonraki adımınız Package Manager Console'u acın...Ve actıgınız zaman dikkat edin, konsolun calısacagı proje sizin Context sınıfınızın bulundugu proje olmalıdır...

@@ -1,0 +1,21 @@
+﻿1=> Bir Otel Rezervasyon sitesinin veritabanı semasını CodeFirst yöntemiyle N-Tier mimari paterninin DAL kısmı dahil bu kısmına kadar yapısını kurun... Musterilerin rezervasyonları , odalar,  hizmetliler ve oda tipleri müsterilere dair yapılacak ozel jestler dahil bu şemanın icerisinde bulunmalıdır...Aynı zamanda musteri rezervasyonunun tipi de bulunmalıdır...
+
+2=> Bir Arac Kiralama (Rent a Car) sitesinin veritabanı semasını CodeFirst yöntemiyle N-Tier mimari paterninin DAL kısmı dahil bu kısmına kadar yapısını kurun... Aracların müsterileri, aracların tipi, mevcut durumda müsait olmayan aracların sorgulanabilecegi bir şema isteniyor...
+
+3=> Bir Arac Arıza Tespit sistemi programı... Mühendislerin ve teknik birimin (ustaların) ilgili araclarla ilgilenip onların arızalarını tespit edip kaydedebilecekleri ve firmaların da araclardan sorumlu oldugu aynı zamanda aracların ve arızaların tiplerinin de sorgulanabilecegi ve ayrıca bu hatalara dair cözümlerin hatalar ile  ilişkisini de kurabileceginzi bir şema yaratın...
+
+4=> Bir MMORPG oyununun veritabanı semasını yaratın...(Bir oyuncu oyuna girer ve karakter acar... Bu karakteri acarken bu karakterin sınıf dedigimiz meslegini secer(Büyücü,okcu,Savascı)).Meslegini sectiginde bir de karakter ırkını secer(insan,elf,tauren)...Sectigi ırka göre karakter oyuna girdiginde bu ırka bir şehirden baslar...Aynı zamanda sehirlerde ve bölgelerde zindanlar vardır...Bu karakter dilerse bir zindana girebilir bir zindanda da gerekirse birden fazla oyuncu bulunabilir... 
+
+5=> Askeri envanter ve sorgulama sistemi (Rutbelere göre personel ve ordunun elindeki aracların tipleri ordunun elinde hangi aracların bulundugunu gösteren (hava aracları tank ucak vs...))
+
+6=> Bilge Adam ERP sistemi (Egitmenler müdürler danısmanlar kurslar branslar )
+
+7=> Binance arbitraj sistemi (Coinler, Islemler,Hesaplar)
+
+8=> Warthunder gibi bir oyunun Veritabanını olusturan bir sistem...(Ucak tank gemi , ülkeler)
+
+9=> Facebook veya Instagram bir sosyal medya sitesinin veritabanını olusutran bir sistem 
+
+10 => Akademik makalelerin paylasılabildigi (Kullanıcıların makale paylastıgı editorlerin bu makaleleri düzenledigi, bu makalalere yorum atılabilen ) bir veritabanı sistemi yaratın...
+
+Bütün sistemler N-Tier mimari paterninde DAL dahil DAL'e kadar yapılsın...
