@@ -14,7 +14,7 @@ namespace Project.MAP.Options
             ToTable("Satıslar");
 
             Ignore(x => x.ID);
-            HasKey(x => new
+            HasKey(x => new 
             {
                 x.OrderID,
                 x.ProductID

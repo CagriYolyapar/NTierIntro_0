@@ -18,6 +18,9 @@ namespace Project.MAP.Options
             Property(x => x.ModifiedDate).HasColumnName("Guncelleme Tarihi").HasColumnType("datetime2");
             Property(x => x.DeletedDate).HasColumnName("Silme Tarihi").HasColumnType("datetime2");
             Property(x => x.Status).HasColumnName("Veri Durumu");
+
+
+         
         }
     }
 }
