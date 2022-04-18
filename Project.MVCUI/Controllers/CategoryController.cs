@@ -1,0 +1,24 @@
+﻿using Project.BLL.DesignPatterns.GenericRepository.ConcRep;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+
+namespace Project.MVCUI.Controllers
+{
+    public class CategoryController : Controller
+    {
+        CategoryRepository _cRep;
+
+        public CategoryController()
+        {
+            _cRep = new CategoryRepository();
+        }
+        // GET: Category
+        public ActionResult Index()
+        {
+            return View();
+        }
+    }
+}

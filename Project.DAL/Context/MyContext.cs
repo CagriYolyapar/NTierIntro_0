@@ -24,7 +24,8 @@ namespace Project.DAL.Context
             modelBuilder.Configurations.Add(new OrderMap());
             modelBuilder.Configurations.Add(new OrderDetailMap());
             modelBuilder.Configurations.Add(new ProfileMap());
-            
+            modelBuilder.Configurations.Add(new ShipperMap());
+
         }
 
         public DbSet<AppUser> AppUsers { get; set; }
@@ -33,6 +34,7 @@ namespace Project.DAL.Context
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<AppUserProfile> Profiles { get; set; }
+        public DbSet<Shipper> Shippers { get; set; }
 
 
     }

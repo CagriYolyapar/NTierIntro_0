@@ -58,7 +58,10 @@
     <Compile Include="DesignPatterns\GenericRepository\ConcRep\OrderRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConcRep\ProductRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\ConcRep\ProfileRepository.cs" />
+    <Compile Include="DesignPatterns\GenericRepository\ConcRep\ShipperRepository.cs" />
     <Compile Include="DesignPatterns\GenericRepository\IntRep\IRepository.cs" />
+    <Compile Include="DesignPatterns\GenericRepository\Oracle\BaseRepository.cs" />
+    <Compile Include="DesignPatterns\GenericRepository\Oracle\CategoryRepository.cs" />
     <Compile Include="DesignPatterns\SingletonPattern\DBTool.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
