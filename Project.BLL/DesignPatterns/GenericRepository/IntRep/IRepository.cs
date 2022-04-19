@@ -23,6 +23,8 @@ namespace Project.BLL.DesignPatterns.GenericRepository.IntRep
         void Update(T item);
         void UpdateRange(List<T> list);
 
+        void SetActive(T item);
+
 
         /// <summary>
         /// Bu metot argüman olarak verdiginiz veriyi pasife ceker

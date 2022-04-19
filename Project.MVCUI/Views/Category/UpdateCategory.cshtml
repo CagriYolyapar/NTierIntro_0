@@ -1,0 +1,35 @@
+﻿
+@model CategoryVM
+
+@{
+    ViewBag.Title = "UpdateCategory";
+}
+<div class="container">
+    <h1>Kategori Güncelleme Sayfası</h1>
+</div>
+
+<div class="container" style="margin-top:50px">
+    <div class="panel panel-primary">
+        <div class="panel panel-body">
+            @using (Html.BeginForm())
+            {
+
+                @Html.HiddenFor(x=>x.Category.ID)
+                <div>
+                    @Html.TextBoxFor(x => x.Category.CategoryName, new { placeholder = "Kategori ismi giriniz", @class = "form-control" })
+                </div>
+                <br />
+                <div>
+                    @Html.TextBoxFor(x => x.Category.Description, new { placeholder = "Aciklama giriniz", @class = "form-control" })
+                </div>
+                <br />
+
+                <div>
+                    <button class="btn btn-primary">Güncelle</button>
+                </div>
+            }
+        </div>
+    </div>
+
+</div>
+

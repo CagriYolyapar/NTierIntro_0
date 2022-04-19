@@ -136,5 +136,13 @@ namespace Project.BLL.DesignPatterns.GenericRepository.BaseRep
         {
             return _db.Set<T>().Where(exp).ToList();
         }
+
+        public void SetActive(T item)
+        {
+            item.Status = ENTITIES.Enums.DataStatus.Inserted;
+            item.ModifiedDate = DateTime.Now;
+
+            Save();
+        }
     }
 }
